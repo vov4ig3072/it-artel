@@ -1,3 +1,11 @@
+# Run App
+
+npm install
+
+npm start
+
+http://localhost:4200
+
 # ItArtelTest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.

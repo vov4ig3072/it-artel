@@ -1,0 +1,63 @@
+<div>
+  <h1>Верстка та Загальне</h1>
+  <ol>
+    <li>Чи можна з js змінювати значення before, after?</li>
+    <p>
+      Не можна безпосередньо змінити значення before та after. Проте, можна
+      динамічно змінювати стилі, які використовуються для створення цих
+      псевдоелементів за допомогою JavaScript.
+    </p>
+    <li>Що вказує значення "1em" і якого параметра він прив'язаний</li>
+    <p>
+      1em - це одиниця виміру, що вказує на розмір шрифту відносно розміру
+      шрифту батьківського елементу. 1em - прив'язана до параметра font-size.
+    </p>
+    <li>
+      Вмістити три блоки 20X20px в ряд, блок шириною 60px, при цьому у блоків
+      повинні бути межі. Реалізуйте всі варіанти, які знаєте.
+    </li>
+    <div style="display: flex">
+      <div>
+        <div class="container">
+          <div class="container_item"></div>
+          <div class="container_item"></div>
+          <div class="container_item"></div>
+        </div>
+      </div>
+
+      <div class="container-2">
+        <div class="container-2_item"></div>
+        <div class="container-2_item"></div>
+        <div class="container-2_item"></div>
+      </div>
+    </div>
+
+    <li>Є масив, де лежать об'єкти з датами, відсортуйте його за датами.</li>
+    <div class="sort-date">
+      <div>
+        <p>Decreasing Date</p>
+        <div *ngFor="let date of decreasingDate">
+          {{ date }}
+        </div>
+      </div>
+      <div>
+        <p>Increasing Date</p>
+        <div *ngFor="let date of increasingDate">
+          {{ date }}
+        </div>
+      </div>
+    </div>
+    <li>
+      Напишіть код, який при натисканні на будь-який div всередині root буде
+      виводити в консоль його id.
+    </li>
+    <div id="root" style="background: red" (click)="clickHandle($event)">
+      root
+      <span id="id1" style="background: lightblue">id1</span>
+      <div id="id2" style="background: green">
+        id2
+        <div id="id3" style="background: yellow">id3</div>
+      </div>
+    </div>
+  </ol>
+</div>
